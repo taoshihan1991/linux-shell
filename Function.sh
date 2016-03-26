@@ -27,3 +27,12 @@ function say2(){
 say2
 
 # 从终端调用函数，可以将函数定义在主目录下的.profile文件中
+
+# 函数参数
+function getParam(){
+	echo "第一个参数：${1}"
+	echo "第10个参数：${10}"
+	echo "参数的个数：$# "
+	echo "所有的参数：$* "
+}
+getParam 1 2 3 4 5 6 7 8 9 10
